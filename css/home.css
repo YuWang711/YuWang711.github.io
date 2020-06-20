@@ -33,7 +33,7 @@ body {
 #Nav_div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
     height: inherit;
 }
