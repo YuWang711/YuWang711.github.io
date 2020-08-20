@@ -1,0 +1,57 @@
+.square{
+    height:30px;
+    width:30px;
+    background-color:white;
+    border-color:#555;
+    border-style:solid;
+    border-width:1px;
+}
+
+.square:hover {
+    background-color: yellow;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+}
+
+#blocks{
+    flex-direction:row;
+}
+
+.starting{
+    height:30px;
+    width:30px;
+    border-color:#555;
+    border-style:solid;
+    border-width:1px;
+    background-color: red;
+}
+
+.ending{
+    height:30px;
+    width:30px;
+    border-color:#555;
+    border-style:solid;
+    border-width:1px;
+    background-color: blue;
+}
+
+.Walls{
+    height:30px;
+    width:30px;
+    background-color:black;
+    border-color:#555;
+    border-style:solid;
+    border-width:1px;
+}
+
+.Passed{
+    height:30px;
+    width:30px;
+    background-color:#add8e6;
+    border-color:#555;
+    border-style:solid;
+    border-width:1px;
+}
