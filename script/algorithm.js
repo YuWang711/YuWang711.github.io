@@ -53,6 +53,11 @@ function ChangeSquareType(ele){
 
 function findPath(){
     var start = document.getElementsByClassName("starting");
+    var ending = document.getElementsByClassName("ending");
+    if(start.length < 1 || ending.length < 1){
+        alert('You need to creating a starting point and ending point');
+        return;
+    }
     var node_id = start[0].id;
 
     var result = checkPath(node_id);
@@ -79,6 +84,9 @@ function findPath(){
             result = [...new_list];
         }
     }
+    var ending_node = document.getElementById(result[1]);
+    ending_node.setAttribute('data-parent', result[2]);
+    ConnectPath(ending_node);
     return;
 }
 
@@ -89,49 +97,59 @@ function checkPath(id_val){
     {
         var top_node = document.getElementById(int_id_val - 50);
         if(top_node.className == "ending"){
-            return [true, top_node.id];
+            return [true, top_node.id, int_id_val];
         }
-        else if(top_node.className != "Passed" && top_node.className != "starting"){
+        else if(top_node.className != "Passed" && top_node.className != "starting" && top_node.className != "Walls"){
             top_node.setAttribute('data-parent', int_id_val);
             result_array.push(top_node.id);
             passby(top_node.id);
+        }else if(top_node.className == "Walls"){
+            
         }
+        Delay();
     }
     if(( ((int_id_val + 1)%50) - (int_id_val%50)) == 1)
     {
         var right_node = document.getElementById(int_id_val + 1);
         if(right_node.className == "ending"){
-            return [true, right_node.id];
+            return [true, right_node.id, int_id_val];
         }
-        else if(right_node.className != "Passed" && right_node.className != "starting"){
+        else if(right_node.className != "Passed" && right_node.className != "starting" && right_node.className != "Walls"){
             right_node.setAttribute('data-parent', int_id_val);
             result_array.push(right_node.id);
             passby(right_node.id);
+        }else if(right_node.className == "Walls"){
+            
         }
+        Delay();
     }
     if( int_id_val + 50 < 1000)
     {
         var bottom_node = document.getElementById(int_id_val + 50);
         if(bottom_node.className == "ending"){
-            return [true, bottom_node.id];
+            return [true, bottom_node.id, int_id_val];
         }
-        else if(bottom_node.className != "Passed" && bottom_node.className != "starting"){
+        else if(bottom_node.className != "Passed" && bottom_node.className != "starting" && bottom_node.className != "Walls"){
             bottom_node.setAttribute('data-parent', int_id_val);
             result_array.push(bottom_node.id);
             passby(bottom_node.id);
         }
+        Delay();
     }
     if( ((((int_id_val - 1)%50)+1)%50) > 0)
     {
         var left_node = document.getElementById(int_id_val - 1);
         if(left_node.className == "ending"){
-            return [true, left_node.id];
+            return [true, left_node.id, int_id_val];
         }
-        else if(left_node.className != "Passed" && left_node.className != "starting"){
+        else if(left_node.className != "Passed" && left_node.className != "starting" && left_node.className != "Walls"){
             left_node.setAttribute('data-parent', int_id_val);
             result_array.push(left_node.id);
             passby(left_node.id);
+        }else if(left_node.className == "Walls"){
+            
         }
+        Delay();
     }
     return result_array;
 }
@@ -143,7 +161,16 @@ function passby(id_val)
     return;
 }
 
-function ConnectPath(id_val)
+function ConnectPath(ending_node)
 {
+    var prev_node = document.getElementById(ending_node.getAttribute('data-parent'));
+    while(prev_node.className != "starting"){
+        prev_node.className = 'Path';
+        prev_node = document.getElementById(prev_node.getAttribute('data-parent'));
+    }
+    return;
+}
 
+function Delay(){
+    setTimeout( () => {null;}, 30000);
 }
