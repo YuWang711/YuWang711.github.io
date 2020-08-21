@@ -103,8 +103,6 @@ function checkPath(id_val){
             top_node.setAttribute('data-parent', int_id_val);
             result_array.push(top_node.id);
             passby(top_node.id);
-        }else if(top_node.className == "Walls"){
-            
         }
         Delay();
     }
@@ -118,8 +116,6 @@ function checkPath(id_val){
             right_node.setAttribute('data-parent', int_id_val);
             result_array.push(right_node.id);
             passby(right_node.id);
-        }else if(right_node.className == "Walls"){
-            
         }
         Delay();
     }
@@ -146,8 +142,6 @@ function checkPath(id_val){
             left_node.setAttribute('data-parent', int_id_val);
             result_array.push(left_node.id);
             passby(left_node.id);
-        }else if(left_node.className == "Walls"){
-            
         }
         Delay();
     }
