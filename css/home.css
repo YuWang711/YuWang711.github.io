@@ -41,7 +41,8 @@ body {
 
 .x-axis{
     list-style: none;
-    width: 100%;
+    padding-left: 10%;
+    width: 90%;
 }
 .x-axis-div{
     height:15%;
@@ -50,10 +51,8 @@ body {
 }
 
 li {
-    float: right;
-    margin-left: 2.5%;
-    padding-right:5%;
-
+    float: left;
+    margin-left: 6%;
 }
 
 .programming_language{
