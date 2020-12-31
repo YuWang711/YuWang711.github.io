@@ -24,6 +24,7 @@ body {
     width: 62vw;
     height: 100%;
     left: 35vw;
+    margin-left: 1vw;
     position:relative;
 
 }
@@ -75,7 +76,7 @@ li {
 .yLegend{
     width:13%;
     float:left;
-    font-size: 2.5vh;
+    font-size: 1vw;
 }
 
 .barfig{
