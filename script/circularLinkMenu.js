@@ -1,8 +1,9 @@
-var links = [{label: 'Home', bg: '#c0392b', href: "./index.html"}, 
-             {label: 'About', bg: '#16a085', href: "./about.html"}, 
-             {label: 'Skills', bg: '#8e44ad', href: "./skills.html"}, 
-             {label: 'Projects', bg: '#27ae60', href: "./projects.html"}, 
-             {label: 'Contact', bg: '#f39c12', href: "./contact.html"}, 
+
+var links = [{label: 'Home', bg: '#103BFF', href: "./index.html"}, 
+             {label: 'About', bg: '#406CE6', href: "./about.html"}, 
+             {label: 'Skills', bg: '#4B88FA', href: "./skills.html"}, 
+             {label: 'Projects', bg: '#458AE6', href: "./projects.html"}, 
+             {label: 'Contact', bg: '#148BFA', href: "./contact.html"}, 
             ];
 var windowHeight = window.innerHeight/1.5;
 if(windowHeight === 0) windowHeight = 100;
@@ -13,7 +14,7 @@ var radius = windowHeight*0.6,
     increment = totalArea/(links.length-1),
     startPoint = 0-(totalArea/2),
     fontSize = radius*0.08,
-    titleSize = radius*0.15,
+    titleSize = radius*0.02,
     linkSize = radius*0.15,
     title =  document.createElement('div');
 
@@ -26,10 +27,10 @@ styleLinks();
 
 function styleTitle(){
     title.innerHTML = "Yu Wang";
-    title.style.fontSize = titleSize+'px';
+    title.style.fontSize = titleSize+'vh';
     title.style.position = 'absolute';
-    title.style.top = radius*0.7+'px';
-    title.style.left = 5 +'px';
+    title.style.top = radius*0.11+'vh';
+    title.style.left = 1 +'vw';
 }
 
 function addTtile(){
@@ -55,7 +56,6 @@ function addLinks() {
   for (var i=0, l=links.length; i<l; i++) {
     link = document.createElement('a'),
     hover = document.createElement('span');
-    link.href = "#";
     link.dataset.color = links[i].bg;
     link.href = links[i].href;
     link.style.display = 'inline-block';

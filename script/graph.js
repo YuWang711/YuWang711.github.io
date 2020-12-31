@@ -65,7 +65,7 @@ $(document).ready(function() {
             var rowGroup = $('<div class="row-group"></div>');
             var yLegend = $('<div class="yLegend">'+yLegends[i] +'</div>');
             yLegend.appendTo(rowGroup)
-            var barfig = $('<div class = "barfig fig'+[i] + '">'+ this + '</div>');
+            var barfig = $('<div class = "barfig fig'+[i] + '"></div>');
             barfig.width = Math.floor( this/chartXMax * 87) + '%';
             bars.push(barfig);
             barfig.appendTo(rowGroup);
