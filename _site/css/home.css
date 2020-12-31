@@ -1,13 +1,14 @@
 
 body {
-    background: #c0392b;
+
+    background: #483BF5;
     font-family: 'Economica', sans-serif;
     color: white;
-
     text-transform: uppercase;
     letter-spacing: 0.1em;
     -webkit-backface-visibility: hidden;
     height: 98vh;
+
 }
   
 #circle {
@@ -28,7 +29,7 @@ body {
 }
 
 .chart{
-    position: relative;
+    position: absolute;
     height:40%;
     width:100%;
 }
@@ -41,22 +42,23 @@ body {
 
 .x-axis{
     list-style: none;
-    width: 100%;
+    padding-left: 10%;
+    width: 90%;
 }
 .x-axis-div{
-    height:15%;
+    height:6vh;
     width:100%;
     position: relative;;
 }
 
 li {
-    float: right;
-    margin-left: 2.5%;
-    padding-right:5%;
-
+    float: left;
+    font-size:1vw;
+    margin-left: 4vw;
 }
 
 .programming_language{
+    font-size: 1vw;
     text-align: center;
 }
 
@@ -73,21 +75,25 @@ li {
 .yLegend{
     width:13%;
     float:left;
-    font-size: 15px;
+    font-size: 2.5vh;
 }
 
 .barfig{
     float:left;
+    height: 3vh;
     background-color:white;
 }
 
-#skill-table{
+.noneDisplay{
     display: none;
 }
 
+
 .spokenLanguage{
-    position:relative;
+    position: absolute;
     text-align: center;
+    top: 40%;
+    left: 18vw;
     height: 15%;
     margin:2%;
 }
