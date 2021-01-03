@@ -2,7 +2,7 @@
 body {
     background: #483BF5;
     font-family: 'Economica', sans-serif;
-    color: white;
+    color: #E9E8ED;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     -webkit-backface-visibility: hidden;
@@ -17,7 +17,8 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    border: 2px solid #fff;
+    border-color:#DAD9DE;
+    color: #DAD9DE;
     position: absolute;
     left: -250px;
 }
@@ -104,6 +105,10 @@ li {
     height: 33%;
 }
 
+.words{
+    font-family:'quoteFont';
+}
+
 #upper_quote{
     top:30vh;
     position:absolute;
@@ -116,9 +121,38 @@ li {
 }
 
 #author{
+    font-family:'quoteFont';
     top: 60vh;
     width: 70%;
     position:absolute;
     text-align: right;
     font-size: 25px;
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("../assets/font/cafe-francoise-font/CafeFrancoise-EapP9.ttf");
+}
+
+@font-face{
+    font-family: "quoteFont";
+    src: url("../assets/font/sunshine-mind-font/SunshineMind-K7Z8l.ttf");
+}
+
+.about{
+    font-family: "myFirstFont";
+    font-size:22px;
+    color: #DAD9DE;
+}
+
+#upper_about{
+    width: 48%;
+    float: left;
+    position: 'absolute';
+}
+
+#lower_about{
+    width: 100%;
+    float: right;
+    position: 'absolute';
 }

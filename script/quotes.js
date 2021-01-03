@@ -3,9 +3,9 @@ $(document).ready(function() {
     var lower_quote = ['who', 'do', 'the', 'things', 'that', 'no', 'one', 'can', 'imagine', '.'];
 
     
-    var fontSize = 25;
+    var fontSize = 30;
     var hover_fontSize = 40;
-    var rightMargin = 8;
+    var rightMargin = 20;
     var borderSize = 10;
     createQuotes(upper_quote, '#upper_quote');
     createQuotes(lower_quote, '#lower_quote');

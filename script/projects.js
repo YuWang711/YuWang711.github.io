@@ -12,7 +12,6 @@ $(document).ready(function() {
     function createBlocks(data, container){
         //First declare variable
         var blocks = [];
-        var blockContainer = $('<div id="Block_Container"></div>');
         var data = $(data);
         var container = $(container);
         var blockHeight = '350';

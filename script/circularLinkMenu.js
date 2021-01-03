@@ -1,10 +1,10 @@
   var menu = document.createElement('div');
   menu.id = "menu";
-  var links = [{label: 'Home', bg: '#103BFF', href: "./index.html"}, 
-              {label: 'About', bg: '#406CE6', href: "./about.html"}, 
-              {label: 'Skills', bg: '#4B88FA', href: "./skills.html"}, 
-              {label: 'Projects', bg: '#458AE6', href: "./projects.html"}, 
-              {label: 'Contact', bg: '#148BFA', href: "./contact.html"}, 
+  var links = [{label: 'Home', bg: '#2307ED', href: "./index.html"}, 
+              {label: 'About', bg: '#0A12FA', href: "./about.html"}, 
+              {label: 'Skills', bg: '#042CE0', href: "./skills.html"}, 
+              {label: 'Projects', bg: '#0800F0', href: "./projects.html"}, 
+              {label: 'Contact', bg: '#042DE0', href: "./contact.html"}, 
               ];
   var windowHeight = window.innerHeight/1.5;
   if(windowHeight === 0) windowHeight = 100;
@@ -61,7 +61,7 @@
       link.href = links[i].href;
       link.style.display = 'inline-block';
       link.style.textDecoration = 'none';
-      link.style.color = '#fff';
+      link.style.color = '#E9E8ED';
       link.style.position = 'absolute';
       link.style.zIndex = 100;
       link.innerHTML = links[i].label;
