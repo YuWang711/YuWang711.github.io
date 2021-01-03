@@ -28,7 +28,6 @@ body {
     left: 35vw;
     margin-left: 1vw;
     position:relative;
-
 }
 
 .chart{
@@ -103,4 +102,23 @@ li {
 
 .SL{
     height: 33%;
+}
+
+#upper_quote{
+    top:30vh;
+    position:absolute;
+}
+
+#lower_quote{
+    top:45vh;
+    position:absolute;
+
+}
+
+#author{
+    top: 60vh;
+    width: 70%;
+    position:absolute;
+    text-align: right;
+    font-size: 25px;
 }
