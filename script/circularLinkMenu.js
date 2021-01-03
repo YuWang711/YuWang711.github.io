@@ -80,16 +80,16 @@
 
   function styleLinks() {
     for (var i=0, l=links.length; i<l; i++) {
-      var link = links[i].elem, hover = links[i].hover, deg = startPoint+(i*increment);  
-      link.style.paddingLeft = radius*1.2+'px';
+      var link = links[i].elem, hover = links[i].hover, deg = startPoint+(i*0.9*increment);  
+      link.style.paddingLeft = radius*1.1+'px';
       link.style.fontSize = fontSize+'px';
       link.style.height = linkSize+'px';
       link.style.lineHeight = linkSize+'px';
       setTransformOrigin(link, '0px '+linkSize*0.8+'px');
       setTransition(link, 'all 0.2s ease-out');
       setTransform(link, 'rotate('+deg+'deg)');
-      link.style.left = borderSize*0.8+'px';
-      link.style.top = (windowHeight/2) - (windowHeight*0.08)+borderSize+'px';
+      link.style.left = borderSize*0.2+'px';
+      link.style.top = (windowHeight/2) - (windowHeight*0.1)+borderSize+'px';
 
       hover.style.left = borderSize+'px';
       setTransformOrigin(hover, '0px '+linkSize*0.6+'px');
@@ -115,14 +115,14 @@
 
   function linkOver(e) {
     var thisLink = e.target, thisHover = thisLink.nextSibling;
-    thisLink.style.paddingLeft = radius*1.25+'px';
+    thisLink.style.paddingLeft = radius*1.2+'px';
     thisHover.style.opacity = 1;
     document.body.style.backgroundColor = thisLink.dataset.color;
   }
 
   function linkOut(e) {
     var thisLink = e.target, thisHover = thisLink.nextSibling;
-    thisLink.style.paddingLeft = radius*1.2+'px';
+    thisLink.style.paddingLeft = radius*1.1+'px';
     thisHover.style.opacity = 0;
   }
 
