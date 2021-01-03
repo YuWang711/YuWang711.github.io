@@ -110,12 +110,22 @@ li {
 }
 
 #upper_quote{
-    top:30vh;
+    top:25vh;
+    float:left;
+    position:absolute;
+}
+
+#middle_quote{
+    top:35vh;
+    padding-left:18vw;
+    text-align: right;
     position:absolute;
 }
 
 #lower_quote{
     top:45vh;
+    float:left;
+
     position:absolute;
 
 }
