@@ -1,6 +1,5 @@
 
 body {
-
     background: #483BF5;
     font-family: 'Economica', sans-serif;
     color: white;
@@ -8,7 +7,10 @@ body {
     letter-spacing: 0.1em;
     -webkit-backface-visibility: hidden;
     height: 98vh;
+}
 
+#menu {
+    margin-right: 2vw;
 }
   
 #circle {
