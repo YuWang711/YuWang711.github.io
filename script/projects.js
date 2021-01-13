@@ -65,6 +65,8 @@ $(document).ready(function() {
                 'left': blockWidth/3 + 'px',
                 'position': 'absolute',
                 'z-index': '1',
+                "color": 'white',
+                "font-size": '25px',
             });
         }
 
