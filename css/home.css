@@ -133,7 +133,7 @@ li {
 }
 
 #author{
-    font-family:'quoteFont';
+    /* font-family:'quoteFont'; */
     top: 60vh;
     width: 70%;
     position:absolute;
@@ -141,7 +141,7 @@ li {
     font-size: 25px;
 }
 
-@font-face {
+/* @font-face {
     font-family: "myFirstFont";
     src: url("../assets/font/cafe-francoise-font/CafeFrancoise-EapP9.ttf");
 }
@@ -149,10 +149,10 @@ li {
 @font-face{
     font-family: "quoteFont";
     src: url("../assets/font/sunshine-mind-font/SunshineMind-K7Z8l.ttf");
-}
+} */
 
 .about{
-    font-family: "myFirstFont";
+    /* font-family: "myFirstFont"; */
     font-size:22px;
     color: #DAD9DE;
 }
