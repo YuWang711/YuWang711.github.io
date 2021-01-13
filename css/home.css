@@ -5,7 +5,6 @@ body {
     background: #483BF5;
     font-family: 'Economica', sans-serif;
     color: #E9E8ED;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
     -webkit-backface-visibility: hidden;
     height: 98vh;
@@ -134,6 +133,7 @@ li {
 
 #author{
     /* font-family:'quoteFont'; */
+    text-transform: uppercase;
     top: 60vh;
     width: 70%;
     position:absolute;
